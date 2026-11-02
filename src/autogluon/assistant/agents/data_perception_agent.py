@@ -163,6 +163,10 @@ class DataPerceptionAgent(BaseAgent):
         )
 
     def read_file(self, file_path, max_chars):
+        if str(file_path).lower().endswith(".txt"):
+            with open(file_path, "r", encoding="utf-8", errors="replace") as handle:
+                return handle.read(max_chars)
+
         # 0. init llm
         if not self.reader_llm_config.multi_turn:
             self.reader_llm = init_llm(

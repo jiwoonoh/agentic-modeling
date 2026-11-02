@@ -1,0 +1,165 @@
+per_execution_timeout: 600
+max_file_group_size_to_show: 5
+num_example_files_to_show: 1
+max_chars_per_file: 768
+num_tutorial_retrievals: 30
+max_num_tutorials: 5
+max_user_input_length: 2048
+max_error_message_length: 2048
+max_tutorial_length: 32768
+configure_env: false
+condense_tutorials: true
+use_tutorial_summary: true
+continuous_improvement: false
+optimize_system_resources: false
+cleanup_unused_env: true
+enable_meta_prompting: false
+llm:
+  provider: openai
+  model: openrouter/free
+  max_tokens: 8192
+  proxy_url: https://openrouter.ai/api/v1
+  temperature: 0.1
+  top_p: 0.9
+  verbose: true
+  multi_turn: false
+  template: null
+  add_coding_format_instruction: false
+  apply_meta_prompting: false
+python_coder:
+  provider: openai
+  model: openrouter/free
+  max_tokens: 8192
+  proxy_url: https://openrouter.ai/api/v1
+  temperature: 0.1
+  top_p: 0.9
+  verbose: true
+  multi_turn: true
+  template: null
+  add_coding_format_instruction: false
+  apply_meta_prompting: true
+bash_coder:
+  provider: openai
+  model: openrouter/free
+  max_tokens: 8192
+  proxy_url: https://openrouter.ai/api/v1
+  temperature: 0.1
+  top_p: 0.9
+  verbose: true
+  multi_turn: true
+  template: null
+  add_coding_format_instruction: false
+  apply_meta_prompting: false
+executer:
+  provider: openai
+  model: openrouter/free
+  max_tokens: 8192
+  proxy_url: https://openrouter.ai/api/v1
+  temperature: 0.1
+  top_p: 0.9
+  verbose: true
+  multi_turn: false
+  template: null
+  add_coding_format_instruction: false
+  apply_meta_prompting: false
+  max_stdout_length: 8192
+  max_stderr_length: 2048
+meta_prompting:
+  provider: openai
+  model: openrouter/free
+  max_tokens: 8192
+  proxy_url: https://openrouter.ai/api/v1
+  temperature: 0.1
+  top_p: 0.9
+  verbose: true
+  multi_turn: false
+  template: null
+  add_coding_format_instruction: false
+  apply_meta_prompting: false
+reader:
+  provider: openai
+  model: openrouter/free
+  max_tokens: 8192
+  proxy_url: https://openrouter.ai/api/v1
+  temperature: 0.1
+  top_p: 0.9
+  verbose: true
+  multi_turn: false
+  template: null
+  add_coding_format_instruction: false
+  apply_meta_prompting: false
+  details: false
+error_analyzer:
+  provider: openai
+  model: openrouter/free
+  max_tokens: 8192
+  proxy_url: https://openrouter.ai/api/v1
+  temperature: 0.1
+  top_p: 0.9
+  verbose: true
+  multi_turn: false
+  template: null
+  add_coding_format_instruction: false
+  apply_meta_prompting: false
+retriever:
+  provider: openai
+  model: openrouter/free
+  max_tokens: 8192
+  proxy_url: https://openrouter.ai/api/v1
+  temperature: 0.1
+  top_p: 0.9
+  verbose: true
+  multi_turn: false
+  template: null
+  add_coding_format_instruction: false
+  apply_meta_prompting: false
+reranker:
+  provider: openai
+  model: openrouter/free
+  max_tokens: 8192
+  proxy_url: https://openrouter.ai/api/v1
+  temperature: 0.0
+  top_p: 1.0
+  verbose: true
+  multi_turn: false
+  template: null
+  add_coding_format_instruction: false
+  apply_meta_prompting: false
+description_file_retriever:
+  provider: openai
+  model: openrouter/free
+  max_tokens: 8192
+  proxy_url: https://openrouter.ai/api/v1
+  temperature: 0.0
+  top_p: 1.0
+  verbose: true
+  multi_turn: false
+  template: null
+  add_coding_format_instruction: false
+  apply_meta_prompting: false
+task_descriptor:
+  provider: openai
+  model: openrouter/free
+  max_tokens: 8192
+  proxy_url: https://openrouter.ai/api/v1
+  temperature: 0.1
+  top_p: 0.9
+  verbose: true
+  multi_turn: false
+  template: null
+  add_coding_format_instruction: false
+  apply_meta_prompting: true
+  max_description_files_length_to_show: 1024
+  max_description_files_length_for_summarization: 16384
+tool_selector:
+  provider: openai
+  model: openrouter/free
+  max_tokens: 8192
+  proxy_url: https://openrouter.ai/api/v1
+  temperature: 0.0
+  top_p: 1.0
+  verbose: true
+  multi_turn: false
+  template: null
+  add_coding_format_instruction: false
+  apply_meta_prompting: false

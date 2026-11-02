@@ -64,8 +64,8 @@ class TutorialIndexer:
             self.model = FlagAutoModel.from_finetuned(
                 self.embedding_model_name,
                 query_instruction_for_retrieval="Represent this sentence for searching relevant passages:",
-                use_fp16=True,
-                devices=None,  # Use single process mode
+                use_fp16=False,
+                devices="cpu",  # Use single process mode
                 batch_size=32,  # Reasonable batch size
                 normalize_embeddings=False,  # We'll handle normalization ourselves
             )
